@@ -16153,27 +16153,6 @@
     {
       "type": "Feature",
       "properties": {
-        "ID": "AL242005",
-        "Name": "VINCE",
-        "Year": 2005,
-        "Month": 10,
-        "Day": 11,
-        "Status": " TD",
-        "Wind_mph": 30,
-        "Latitude": 37.2,
-        "Longitude": "-"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          ,
-          37.2
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "ID": "AL252005",
         "Name": "WILMA",
         "Year": 2005,
