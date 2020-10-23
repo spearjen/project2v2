@@ -111,22 +111,25 @@
 <!-- Sidebar
 ================================================== -->
   <style>
+/* font color formatting     */
+p {
+  color:#082A1D;
+}
+h2 {
+  color: #082A1D;
+}
+a {
+  color: #082A1D;
+}
+h5 {
+  color: #082A1D;
+}
+    /*Side Bar Wrapper formatting  */
 #wrapper {
   padding-left: 270px;
   transition: all 0.4s ease 0s;
 }
-p {
-  color:#CCA000;
-}
-h2 {
-  color: #CCA000;
-}
-a {
-  color: #CCA000;
-}
-h5 {
-  color: #CCA000;
-}
+
 #sidebar-wrapper {
   margin-left: -270px;
   left: 270px;
@@ -194,7 +197,7 @@ h5 {
 
         <!-- <button type="button" id="sidebarCollapse" class="btn btn-info"> <i class="fa fa-align-justify"></i> 
         </button> -->
-        <a class="navbar-brand" href="index.html">Hurricane Frequency & Severity Since 1851</a>
+        <a class="navbar-brand" href="index-ok.html">Hurricane Frequency & Severity Since 1851</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -203,17 +206,12 @@ h5 {
             <li class="nav-item dropdown act">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="../Images/landfall_count_by_year.png">Frequency by Year Since 1851</a></br>
-                <a class="dropdown-item" href="../Images/windspeed_med_by_year.png">Severity by Year Since 1851</a></br>
-                <a class="dropdown-item" href="#">Frequency by Sea Surface Temperature</a></br>
-                <a class="dropdown-item" href="#">Severity by Sea Surface Temperature</a></br>
+                <a class="dropdown-item" href="../Images/landfall_count_by_year.png">Landfall events by Year Since 1851</a></br>
+                <a class="dropdown-item" href="../Images/windspeed_med_by_year.png">Median Windspeed by Year Since 1851</a></br>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/Comparisons.html">Comparisons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/Data.html">Data</a>
+              <a class="nav-link" href="data.html">Data</a>
             </li>
           </ul>
         </div>
@@ -225,27 +223,16 @@ h5 {
     <div id ="wrapper">
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-          <h4>Plots</h4>
+          <h4>Plots:</h4>
             <div class = "row">
               <div class = "col-sm-6 col-md-3">
-                <p>Landfall Count by Year 1851-2019</p>
-                <p>Landfall Count by Year 1851-2019</p>
-                <li> <a class = "thumbnail" href = "pages/MaxTemperature.html"><img src ="../Images/landfall_count_by_year.png" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title= "Land Fall Count By Year"><img src ="../Images/landfall_count_by_year.png" height="150px" width = "225px"></a></li>
                 </br>
-                <p>Median Maximum Windspeed by Year 1851-2019</p>
-                <li> <a class = "thumbnail" href = "pages/Humidity.html"><img src ="../Images/windspeed_med_by_year.png" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title="Median Maximum Windspeed"><img src ="../Images/windspeed_med_by_year.png" height="150px" width = "225px"></a></li>
+                <!-- </br>
+                <li> <a class = "thumbnail" title= "Frequency by Sea Surface Temp." href = "pages/Cloudiness.html"><img src ="../Images/landfall_count_by_year.png" height="150x" width = "225px"></a></li>
                 </br>
-                <!-- <p>Air Temperature Change by Lat, Long, Year 2001-2004</p>
-                <li> <a class = "thumbnail" href = "pages/Cloudiness.html"><img src ="Images/air_temp_med_by_year.png" height="150x" width = "225px"></a></li>
-                </br>
-                <p>Sea Surface Temperature Change by Lat, Long, Year 2001-2004</p>
-                <li> <a class = "thumbnail" href = "pages/WindSpeeds.html"><img src ="Images/sst_med_by_year.png" height="150px" width = "225px"></a></li> -->
-                </br>
-                <p>Frequency by Sea Surface Temperature</p>
-                <li> <a class = "thumbnail" href = "pages/Cloudiness.html"><img src ="../Images/landfall_count_by_year.png" height="150x" width = "225px"></a></li>
-                </br>
-                <p>Severity by Sea Surface Temperature/p>
-                <li> <a class = "thumbnail" href = "pages/WindSpeeds.html"><img src ="../Images/windspeed_med_by_year.png" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title="Severity by Sea Surface Temp." href = "pages/WindSpeeds.html"><img src ="../Images/windspeed_med_by_year.png" height="150px" width = "225px"></a></li> -->
             </div>
           </div>
         </ul>
