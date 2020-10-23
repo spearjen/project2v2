@@ -28,7 +28,7 @@ cors=CORS(app, resources=r'smallSst.json', allow_headers='Content-Type')
 @app.route("/",methods=['GET'])
 # @cross_origin()
 def index():
-    return render_template("index-ok.html")
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True, port = 1123)
