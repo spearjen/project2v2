@@ -98,9 +98,9 @@
     }
 
 
-<!-- Positioning the jumbotron
-================================================== -->
-  <style>
+/* <!-- Positioning the jumbotron
+================================================== --> */
+  
     .bs-docs-section {
       position: "absolute";
       left: "15%";
@@ -111,6 +111,20 @@
 <!-- Sidebar
 ================================================== -->
   <style>
+/* font color formatting     */
+p {
+  color:#082A1D;
+}
+h2 {
+  color: #082A1D;
+}
+a {
+  color: #082A1D;
+}
+h5 {
+  color: #082A1D;
+}
+    /*Side Bar Wrapper formatting  */
 #wrapper {
   padding-left: 270px;
   transition: all 0.4s ease 0s;
@@ -130,6 +144,10 @@
 
 #page-content-wrapper {
   width: 100%;
+}
+
+.jumbotron {
+  background-image: url("https://s.hdnux.com/photos/75/50/14/16155442/3/ratio3x2_1200.jpg");
 }
 
 .sidebar-nav {
@@ -179,7 +197,7 @@
 
         <!-- <button type="button" id="sidebarCollapse" class="btn btn-info"> <i class="fa fa-align-justify"></i> 
         </button> -->
-        <a class="navbar-brand" href="index.html">Hurricane Frequency & Severity Since 1851</a>
+        <a class="navbar-brand" href="index-ok.html">Hurricane Frequency & Severity Since 1851</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -188,17 +206,12 @@
             <li class="nav-item dropdown act">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="../Images/landfall_count_by_year.png">Frequency by Year Since 1851</a></br>
-                <a class="dropdown-item" href="../Images/windspeed_med_by_year.png">Severity by Year Since 1851</a></br>
-                <a class="dropdown-item" href="#">Frequency by Sea Surface Temperature</a></br>
-                <a class="dropdown-item" href="#">Severity by Sea Surface Temperature</a></br>
+                <a class="dropdown-item" href="../Images/landfall_count_by_year.png">Landfall events by Year Since 1851</a></br>
+                <a class="dropdown-item" href="../Images/windspeed_med_by_year.png">Median Windspeed by Year Since 1851</a></br>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/Comparisons.html">Comparisons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/Data.html">Data</a>
+              <a class="nav-link" href="data.html">Data</a>
             </li>
           </ul>
         </div>
@@ -210,27 +223,16 @@
     <div id ="wrapper">
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-          <h4>Plots</h4>
+          <h4>Plots:</h4>
             <div class = "row">
               <div class = "col-sm-6 col-md-3">
-                <p>Landfall Count by Year 1851-2019</p>
-                <p>Landfall Count by Year 1851-2019</p>
-                <li> <a class = "thumbnail" href = "pages/MaxTemperature.html"><img src ="../Images/landfall_count_by_year.png" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title= "Land Fall Count By Year"><img src ="../Images/landfall_count_by_year.png" height="150px" width = "225px"></a></li>
                 </br>
-                <p>Median Maximum Windspeed by Year 1851-2019</p>
-                <li> <a class = "thumbnail" href = "pages/Humidity.html"><img src ="../Images/windspeed_med_by_year.png" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title="Median Maximum Windspeed"><img src ="../Images/windspeed_med_by_year.png" height="150px" width = "225px"></a></li>
+                <!-- </br>
+                <li> <a class = "thumbnail" title= "Frequency by Sea Surface Temp." href = "pages/Cloudiness.html"><img src ="../Images/landfall_count_by_year.png" height="150x" width = "225px"></a></li>
                 </br>
-                <!-- <p>Air Temperature Change by Lat, Long, Year 2001-2004</p>
-                <li> <a class = "thumbnail" href = "pages/Cloudiness.html"><img src ="Images/air_temp_med_by_year.png" height="150x" width = "225px"></a></li>
-                </br>
-                <p>Sea Surface Temperature Change by Lat, Long, Year 2001-2004</p>
-                <li> <a class = "thumbnail" href = "pages/WindSpeeds.html"><img src ="Images/sst_med_by_year.png" height="150px" width = "225px"></a></li> -->
-                </br>
-                <p>Frequency by Sea Surface Temperature</p>
-                <li> <a class = "thumbnail" href = "pages/Cloudiness.html"><img src ="../Images/landfall_count_by_year.png" height="150x" width = "225px"></a></li>
-                </br>
-                <p>Severity by Sea Surface Temperature/p>
-                <li> <a class = "thumbnail" href = "pages/WindSpeeds.html"><img src ="../Images/windspeed_med_by_year.png" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title="Severity by Sea Surface Temp." href = "pages/WindSpeeds.html"><img src ="../Images/windspeed_med_by_year.png" height="150px" width = "225px"></a></li> -->
             </div>
           </div>
         </ul>
@@ -245,12 +247,22 @@
           <div class="bs-component">
             <div class="jumbotron" style="padding-bottom: 0px">
               
-              <h2 class="display-3">How have rising temperatures impacted hurricanes?</br></h2>
+              <h2 class="display-3">How have rising temperatures impacted hurricanes?</br>
+              
+              </h2>
               </br>
               <p class="lead">This study tracks sea surface temperature changes in the Atlantic basin from 1851 to 2019, focusing on how hurricanes have changed in severity and frequency.</br>
               Source data is provided on the Data page. Visualizations may be found under the Plots dropdown, with an overview at the Comparisons page.</br>
               </br>
-              <p><a href = "https://www.nasa.gov/vision/earth/environment/HURRICANE_RECIPE.html#:~:text=Warm%2C%20rising%20air%20in%20the,heat%20engine%2C%20continuing%20the%20cycle.&text=Air%20temperature%20and%20humidity%20are%20also%20important%20factors." target="_blank">NASA - Recipe for a Hurricane </a></p></br>
+              <p> Interested in Learning More? Click Below:</p>
+              <p><a href = "https://www.nasa.gov/vision/earth/environment/HURRICANE_RECIPE.html#:~:text=Warm%2C%20rising%20air%20in%20the,heat%20engine%2C%20continuing%20the%20cycle.&text=Air%20temperature%20and%20humidity%20are%20also%20important%20factors." target="_blank">NASA - Recipe for a Hurricane </a></p>
+              <p><a href = "https://cdn.star.nesdis.noaa.gov//GOES16/ABI/SECTOR/TAW/GEOCOLOR/GOES16-TAW-GEOCOLOR-900x540.gif" target="_blank">Current Satellite Imagery of the Atlantic Basin</a></p>
+                <div class="well">
+                  <h5>Use Dropdown Menu for Year Selection:</h5>
+                  <select class="form-control" id="selDataset" onchange="dropDownChange(this.value)">
+                  <option selected="true" disabled='disabled'>1950</option>
+                  </select>
+                </div>  
             </div>
         </div>
       </div>
