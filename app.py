@@ -30,10 +30,25 @@ api = Api(app)
 def index():
     return render_template("index-ok.html")
 
+@app.route("/data")
+# @cross_origin()
+def data():
+    return render_template("data.html")
+
+@app.route("/cost")
+# @cross_origin()
+def cost():
+    return render_template("cost.html")
+
 # @app.route("/data")
 # # @cross_origin()
 # def data():
-#     return "/pages/data.html"
+#     return render_template("windspeed_med_by_year.png")
+
+# @app.route("/data")
+# # @cross_origin()
+# def data():
+#     return render_template("landfall_count_by_year.pngl")
 
 if __name__ == '__main__':
     app.run(debug=True, port = 1123)

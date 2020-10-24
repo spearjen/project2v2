@@ -1,3 +1,4 @@
+
 // Store our API endpoint inside queryUrl
 var queryUrl = "https://raw.githubusercontent.com/spearjen/project2v2/spearjay/Resources/sstAll.json";
 var url = "https://raw.githubusercontent.com/spearjen/project2v2/master/Resources/hurricane23.json";
@@ -23,7 +24,7 @@ function circleColor(Wind_mph) {
 
 // Once we get a response, send the data.features object to the createFeatures function
 function createFeatures(sst, landfall) {
-    // function createFeatures(sstProp, sstGeo, landfallProp, landfallGeo) {
+
 
     // Define a function we want to run once for each feature in the features array
     // Give each feature a popup describing the place and time of the earthquake
@@ -84,18 +85,7 @@ function createFeatures(sst, landfall) {
         pointToLayer: pointToLayer2,
         style: style1
     });
-    // var sst = L.geoJSON(sstGeo, sstProp, {
-    //     onEachFeature: onEachFeature1,
-    //     pointToLayer: pointToLayer1,
-    //     style: style2
-    // });
 
-    // var landfall = L.geoJSON(landfallGeo, landfallProp, {
-    //     onEachFeature: onEachFeature2,
-    //     pointToLayer: pointToLayer2,
-    //     style: style1
-    // });
-    // Sending our sst layer to the createMap function
     createMap(sst, landfall);
 }
 
@@ -132,8 +122,8 @@ function createMap(sst, landfall) {
 
     // Create our map, giving it the satelitte and sst layers to display on load
     var myMap = L.map("map", {
-        center: [25, -25],
-        zoom: 2.5,
+        center: [25, -75],
+        zoom: 4,
         layers: [satelitte, sst]
     });
 
@@ -168,7 +158,6 @@ d3.json(queryUrl, function (sstRes) {
     console.log(sstRes);
 
     // // Once we get a response, send the data.features object to the createFeatures function
-    // createFeatures(sstRes.features);
 
     d3.json(url, function (landfallRes) {
         console.log(landfallRes);
@@ -183,16 +172,10 @@ d3.json(queryUrl, function (sstRes) {
         })
         init(years)
 
-        // // Once we get a response, send the data.features object to the createFeatures function
         sstRes.features = sstRes.features.filter(feature => feature.properties.year == years[x])
         landfallRes.features = landfallRes.features.filter(feature => feature.properties.Year == years[x])
 
+        // // Once we get a response, send the data.features object to the createFeatures function
         createFeatures(sstRes, landfallRes);
-        // createFeatures(sstProp, sstGeo, landfallProp, landfallGeo);
-
-
     });
 });
-
-init(x)
-

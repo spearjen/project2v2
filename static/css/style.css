@@ -6,8 +6,7 @@ body {
 #map,
 body,
 html {
-  height: 640px;
-  width: 1000px;
+  height: 100vh;
 }
 
 /* html,

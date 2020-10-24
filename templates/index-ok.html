@@ -8,18 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Jay Spears: utilized formatting from https://www.bootstrapcdn.com/bootswatch/?theme=15">
     <meta name="twitter:dnt" content="on">
-    <meta name="description" content="Web Data Visualizations of Latitude and Weather Conditions for DU Data Analytics Bootcamp">
+    <meta name="description" content="Hurricane and Climate Change Analysis for DU Data Analytics Bootcamp">
     <meta name="msapplication-TileColor" content="#222">
     <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#222">
-    <meta property="og:title" content="Web Data Visualizations of Latitude and Weather Conditions for DU Data Analytics Bootcamp">
+    <!-- <meta property="og:title" content="Web Data Visualizations of Latitude and Weather Conditions for DU Data Analytics Bootcamp">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Web Data Visualizations of Latitude and Weather Conditions for DU Data Analytics Bootcamp">
     <meta property="og:url" content="https://www.bootstrapcdn.com/bootswatch/?theme=15">
     <meta property="og:image" content="https://www.bootstrapcdn.com/assets/img/og.dd30b10.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="256">
-    <meta property="og:image:height" content="256">
+    <meta property="og:image:height" content="256"> -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@getbootstrapcdn">
     <meta name="twitter:site" content="@getbootstrapcdn">
@@ -105,16 +105,16 @@
   <style>
 /* font color formatting     */
 p {
-  color:#082A1D;
+  color:black;
 }
 h2 {
-  color: #082A1D;
+  color: black;
 }
 a {
-  color: #082A1D;
+  color: black;
 }
 h5 {
-  color: #082A1D;
+  color: black;
 }
     /*Side Bar Wrapper formatting  */
 #wrapper {
@@ -139,7 +139,7 @@ h5 {
 }
 
 .jumbotron {
-  background-image: url("https://s.hdnux.com/photos/75/50/14/16155442/3/ratio3x2_1200.jpg");
+  background-image: url("https://github.com/spearjen/project2v2/blob/master/Images/1351010.jpg?raw=true");
 }
 
 .sidebar-nav {
@@ -173,6 +173,10 @@ h5 {
       transition: all 0.4s ease 0s;
     }
 }
+
+#part1 {
+  position: 15%  
+}
   </style>
   
 </head>
@@ -197,7 +201,7 @@ h5 {
 
         <!-- <button type="button" id="sidebarCollapse" class="btn btn-info"> <i class="fa fa-align-justify"></i> 
         </button> -->
-        <a class="navbar-brand" href="index-ok.html">Hurricane Frequency & Severity Since 1851</a>
+        <a class="navbar-brand" href="index-ok">Hurricane Frequency & Severity Since 1851</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -206,12 +210,12 @@ h5 {
             <li class="nav-item dropdown act">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="../Images/landfall_count_by_year.png">Landfall events by Year Since 1851</a></br>
-                <a class="dropdown-item" href="../Images/windspeed_med_by_year.png">Median Windspeed by Year Since 1851</a></br>
+                <a class="dropdown-item" href="https://github.com/spearjen/project2v2/blob/master/Images/landfall_count_by_year.png?raw=true">Landfall events by Year Since 1851</a></br>
+                <a class="dropdown-item" href="https://github.com/spearjen/project2v2/blob/master/Images/windspeed_med_by_year.png?raw=true">Median Windspeed by Year Since 1851</a></br>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
+              <a class="nav-link" href="data">Data</a>
             </li>
           </ul>
         </div>
@@ -226,9 +230,9 @@ h5 {
           <h4>Plots:</h4>
             <div class = "row">
               <div class = "col-sm-6 col-md-3">
-                <li> <a class = "thumbnail" title= "Land Fall Count By Year"><img src ="../Images/landfall_count_by_year.png" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title= "Land Fall Count By Year (1851-2017)"><img src ="https://github.com/spearjen/project2v2/blob/master/Images/landfall_count_by_year.png?raw=true" height="150px" width = "225px"></a></li>
                 </br>
-                <li> <a class = "thumbnail" title="Median Maximum Windspeed"><img src ="../Images/windspeed_med_by_year.png" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title="Median Maximum Windspeed by Year (1851-2017)"><img src ="https://github.com/spearjen/project2v2/blob/master/Images/windspeed_med_by_year.png?raw=true" height="150px" width = "225px"></a></li>
                 <!-- </br>
                 <li> <a class = "thumbnail" title= "Frequency by Sea Surface Temp." href = "pages/Cloudiness.html"><img src ="../Images/landfall_count_by_year.png" height="150x" width = "225px"></a></li>
                 </br>
@@ -247,31 +251,30 @@ h5 {
           <div class="bs-component">
             <div class="jumbotron" style="padding-bottom: 0px">
               
-              <h2 class="display-3">How have rising temperatures impacted hurricanes?</br>
+              <h2 class="display-3"><br>
+                <br>
+                <b>How have rising sea temperatures impacted hurricane frequency and severity?</b>
               
               </h2>
-              </br>
-              <p class="lead">This study tracks sea surface temperature changes in the Atlantic basin from 1851 to 2019, focusing on how hurricanes have changed in severity and frequency.</br>
-              Source data is provided on the Data page. Visualizations may be found under the Plots dropdown, with an overview at the Comparisons page.</br>
-              </br>
-              <p> Interested in Learning More? Click Below:</p>
-              <p><a href = "https://www.nasa.gov/vision/earth/environment/HURRICANE_RECIPE.html#:~:text=Warm%2C%20rising%20air%20in%20the,heat%20engine%2C%20continuing%20the%20cycle.&text=Air%20temperature%20and%20humidity%20are%20also%20important%20factors." target="_blank">NASA - Recipe for a Hurricane </a></p>
-              <p><a href = "https://cdn.star.nesdis.noaa.gov//GOES16/ABI/SECTOR/TAW/GEOCOLOR/GOES16-TAW-GEOCOLOR-900x540.gif" target="_blank">Current Satellite Imagery of the Atlantic Basin</a></p>
-                <div class="well">
-                  <h5>Use Dropdown Menu for Year Selection:</h5>
-                  <select id="yearSelect"></select> 
-                  <!-- <option selected="true" disabled='disabled'>1950</option> -->
-                  </select>
-                </div>  
+              <p class="lead"><strong>This study tracks sea surface temperature changes in the Atlantic basin from 1851 to 2019, focusing on how hurricanes have changed in severity and frequency.</strong></br>
+              <p><b>Interested in Learning More?</b></p>
+              <p><a class ="nav-link" href = "https://www.nasa.gov/vision/earth/environment/HURRICANE_RECIPE.html#:~:text=Warm%2C%20rising%20air%20in%20the,heat%20engine%2C%20continuing%20the%20cycle.&text=Air%20temperature%20and%20humidity%20are%20also%20important%20factors." target="_blank">NASA - Recipe for a Hurricane </a></p>
+              <p><a class ="nav-link" href = "https://cdn.star.nesdis.noaa.gov//GOES16/ABI/SECTOR/TAW/GEOCOLOR/GOES16-TAW-GEOCOLOR-900x540.gif" target="_blank">Current Satellite Imagery of the Atlantic Basin</a></p>
+              <p><a class ="nav-link" href="cost">Economic Impact Table</a></p>
+              <p><b>Select a year for the map:</b></p>
+              <div class=well>
+                <select id="yearSelect"></select> 
+              </div>  
+                <!-- Map
+              ================================================== -->
+              <div id="mapid"></div> 
             </div>
         </div>
       </div>
     </div>
 
 
-<!-- Map
-================================================== -->
-    <div id="mapid"></div>
+
 
 
   <!-- Pull in JS, Stylesheets
