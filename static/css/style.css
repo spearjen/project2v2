@@ -3,19 +3,20 @@ body {
   margin: 0;
 }
 
-#mapid,
+#map,
 body,
 html {
-  height: 180px%;
+  height: 640px;
+  width: 1000px;
 }
 
-html,
+/* html,
 body,
 #mapid {
   height: 180px;
   padding-top: 0px;
   margin: 0;
-}
+} */
 
 .info {
   padding: 6px 8px;

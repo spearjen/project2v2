@@ -23,12 +23,17 @@ except ImportError:
 #create Flask app instance
 app = Flask(__name__)
 api = Api(app)
-cors=CORS(app, resources=r'smallSst.json', allow_headers='Content-Type')
+# cors=CORS(app, resources=r'smallSst.json', allow_headers='Content-Type')
 
-@app.route("/",methods=['GET'])
+@app.route("/")
 # @cross_origin()
 def index():
-    return render_template("index.html")
+    return render_template("index-ok.html")
+
+# @app.route("/data")
+# # @cross_origin()
+# def data():
+#     return "/pages/data.html"
 
 if __name__ == '__main__':
     app.run(debug=True, port = 1123)
