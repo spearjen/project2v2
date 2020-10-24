@@ -210,8 +210,8 @@ h5 {
             <li class="nav-item dropdown act">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="https://github.com/spearjen/project2v2/blob/master/Images/landfall_count_by_year.png?raw=true">Landfall events by Year Since 1851</a></br>
-                <a class="dropdown-item" href="https://github.com/spearjen/project2v2/blob/master/Images/windspeed_med_by_year.png?raw=true">Median Windspeed by Year Since 1851</a></br>
+                <a class="dropdown-item" href="https://github.com/spearjen/project2v2/blob/master/Images/landfall_count_by_year.png?raw=true" target="_blank">Landfall events by Year Since 1851</a></br>
+                <a class="dropdown-item" href="https://github.com/spearjen/project2v2/blob/master/Images/windspeed_med_by_year.png?raw=true" target="_blank">Median Windspeed by Year Since 1851</a></br>
               </div>
             </li>
             <li class="nav-item">
@@ -230,9 +230,9 @@ h5 {
           <h4>Plots:</h4>
             <div class = "row">
               <div class = "col-sm-6 col-md-3">
-                <li> <a class = "thumbnail" title= "Land Fall Count By Year (1851-2017)"><img src ="https://github.com/spearjen/project2v2/blob/master/Images/landfall_count_by_year.png?raw=true" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title= "Land Fall Count By Year (1851-2017)" href = "https://github.com/spearjen/project2v2/blob/master/Images/landfall_count_by_year.png?raw=true" target="_blank"><img src ="https://github.com/spearjen/project2v2/blob/master/Images/landfall_count_by_year.png?raw=true" height="150px" width = "225px"></a></li>
                 </br>
-                <li> <a class = "thumbnail" title="Median Maximum Windspeed by Year (1851-2017)"><img src ="https://github.com/spearjen/project2v2/blob/master/Images/windspeed_med_by_year.png?raw=true" height="150px" width = "225px"></a></li>
+                <li> <a class = "thumbnail" title="Median Maximum Windspeed by Year (1851-2017)" href ="https://github.com/spearjen/project2v2/blob/master/Images/windspeed_med_by_year.png?raw=true" target="_blank"><img src ="https://github.com/spearjen/project2v2/blob/master/Images/windspeed_med_by_year.png?raw=true" height="150px" width = "225px"></a></li>
                 <!-- </br>
                 <li> <a class = "thumbnail" title= "Frequency by Sea Surface Temp." href = "pages/Cloudiness.html"><img src ="../Images/landfall_count_by_year.png" height="150x" width = "225px"></a></li>
                 </br>
@@ -253,14 +253,16 @@ h5 {
               
               <h2 class="display-3"><br>
                 <br>
-                <b>How have rising sea temperatures impacted hurricane frequency and severity?</b>
+                <b>How have changing sea temperatures impacted hurricane frequency and severity?</b>
               
               </h2>
-              <p class="lead"><strong>This study tracks sea surface temperature changes in the Atlantic basin from 1851 to 2019, focusing on how hurricanes have changed in severity and frequency.</strong></br>
+              <p class="lead"><strong>This study tracks sea surface temperature changes in the Atlantic basin from 1851 to 2017, focusing on how hurricanes have changed in severity and frequency.</strong></br>
               <p><b>Interested in Learning More?</b></p>
               <p><a class ="nav-link" href = "https://www.nasa.gov/vision/earth/environment/HURRICANE_RECIPE.html#:~:text=Warm%2C%20rising%20air%20in%20the,heat%20engine%2C%20continuing%20the%20cycle.&text=Air%20temperature%20and%20humidity%20are%20also%20important%20factors." target="_blank">NASA - Recipe for a Hurricane </a></p>
               <p><a class ="nav-link" href = "https://cdn.star.nesdis.noaa.gov//GOES16/ABI/SECTOR/TAW/GEOCOLOR/GOES16-TAW-GEOCOLOR-900x540.gif" target="_blank">Current Satellite Imagery of the Atlantic Basin</a></p>
               <p><a class ="nav-link" href="cost">Economic Impact Table</a></p>
+              <p><a class ="nav-link" href="https://raw.githubusercontent.com/spearjen/project2v2/master/Resources/hurricane23.json"target="_blank">Hurricane Landfall Data, 1851-2019 (GeoJSON)</a></p>
+              <p><a class ="nav-link" href="https://raw.githubusercontent.com/spearjen/project2v2/spearjay/Resources/sstAll.json"target="_blank">Sea Surface Temperatures, 10X10 Grid, Latitudes 0-50 by Longitudes -100 to-50, 1851-2017 (GeoJSON) </a></p>
               <p><b>Select a year for the map:</b></p>
               <div class=well>
                 <select id="yearSelect"></select> 
@@ -272,10 +274,6 @@ h5 {
         </div>
       </div>
     </div>
-
-
-
-
 
   <!-- Pull in JS, Stylesheets
 ================================================== -->
